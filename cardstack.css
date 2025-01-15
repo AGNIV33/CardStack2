@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.box{
+width: 100%;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+background: darkblue;
+}
+.jar{
+position: absolute;
+display: flex;
+}
+.card{
+    position: absolute;
+width: 300px;
+height: 400px;
+background: white;
+transform: rotate(40deg) skew(-20deg,-10deg);
+transition: 1s;
+box-shadow: 35px 35px 50px rgba(0,0,0,0.5);
+overflow: hidden;
+}
+.jar:hover .card{
+    width: 300px;
+height: 500px;
+    transform: rotate(0deg) skewY(0deg);
+    transition: 1s;
+    box-shadow: 35px 35px 50px rgba(0,0,0,0.5);
+    margin: 50px;
+    background: rgba(255,255,255,0.2);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+
+}
+.jar:hover{
+        animation: animate 0s linear infinite;
+}
+.one{
+    position: relative;
+top: -50px;
+right: -300px;
+z-index: 2;
+}
+.two{
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+.three{
+    position: relative;
+    top: 50px;
+right: 300px;
+
+}
+.jar:hover .one{
+
+    position: relative;
+    top: 0px;
+right: 0px;
+}
+.jar:hover .two{
+
+    position: relative;
+    top: 0px;
+right: 0px;
+}
+.jar:hover .three{
+
+    position: relative;
+    top: 0px;
+right: 0px;
+}
+    
+    a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    top: 20px;
+    padding: 10;
+    margin: 20px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    border-radius: 30px;
+    }
+
+.content{
+    text-align: center;
+    opacity: 0;
+    transition: 0s;
+}
+.jar:hover .content{
+    opacity: 1;
+    transition: 4s;
+}
+
+    h2{
+    position: absolute;
+    top: -150px;
+    right: 20px;
+    font-size: 140;
+    color: rgba(255,255,255,0.3);
+    pointer-events: none;
+    }
+    h3{
+        position: relative;
+        top: 100px;
+        text-align: center;
+    color: rgba(255,255,255,1);
+    font-size: 30;
+    }
+    h4{
+        position: relative;
+        top: 50px;
+        padding: 35px;
+        text-align: center;
+    color: rgba(255,255,255,1);
+    font-size: 19;
+    }
